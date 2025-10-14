@@ -13,17 +13,17 @@
 
 ## Setup
   ### Clone
-    ```bash
-      git clone https://github.com/CarlosEGoulart/Portfolio
-    ```
+   ```bash
+  git clone https://github.com/CarlosEGoulart/Portfolio
+  ```
   ### Instalação
-    ```bash
-      npm install
-    ```
+  ```bash
+  npm install
+  ```
   ### Execução
-    ```bash
-      npm run dev
-    ```
+  ```bash
+  npm run dev
+  ```
 
 ## Contato
   * Email: goulart193@gmail.com
