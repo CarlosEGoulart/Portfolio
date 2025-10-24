@@ -19,7 +19,7 @@ export default function AboutMe() {
             </div>
 
             <div className="w-full max-w-md">
-                <form className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <form className="bg-grey-800 shadow-md rounded px-8 pt-6 pb-12 mb-">
                     <h2 className="text-2xl font-bold mb-6 text-center">Entre em Contato</h2>
                     <div className="mb-4">
                         <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="email">
@@ -40,22 +40,28 @@ export default function AboutMe() {
                         <textarea className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem"></textarea>
                     </div>
                     <div className="flex items-center justify-center">
-                        <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 pb-8 rounded focus:outline-none focus:shadow-outline" type="button">
                             Enviar
                         </button>
                     </div>
+                
+                    <div className='text-4xl flex flex-row justify-center items-center gap-25'>
+                        <a href="https://github.com/CarlosEGoulart" target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlosegoulart" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin />
+                        </a>
+                        <a href="https://www.instagram.com/carlllos.png/" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram />
+                        </a>
+                    </div>
+                
                 </form>
-                <div className='text-4xl flex flex-row justify-center items-center gap-25'>
-                    <a href="https://github.com/CarlosEGoulart" target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
-                    </a>
-                    <a href="https://www.linkedin.com/in/carlosegoulart" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin />
-                    </a>
-                    <a href="https://www.instagram.com/carlllos.png/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
-                    </a>
-                </div>
+
+
+
+
                     
             </div>
         </div>
