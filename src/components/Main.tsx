@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 export default function Main() {
     return <div className='relative flex justify-between items-center px-75 h-screen'>
         <div className='flex flex-col justify-start gap-5'>
-            <h1 className="text-8xl font-bold">Web <br/> Developer.</h1>
+            <h1 className="text-8xl font-bold">Web<br/>Developer.</h1>
             <div className='text-4xl flex flex-row gap-5'>
                 <a href="https://github.com/CarlosEGoulart" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
@@ -20,5 +20,4 @@ export default function Main() {
         
         <img src={carlos} alt="Carlos Goulart"/>
     </div>
-
 }
