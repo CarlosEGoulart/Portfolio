@@ -1,6 +1,6 @@
 import Header from '../components/Header/index'
 import Main from '../components/Main'
-import AboutMe from './AboutMe'
+import AboutMe from '../components/AboutMe.tsx'
 
 export const Home = () => {
     return (
