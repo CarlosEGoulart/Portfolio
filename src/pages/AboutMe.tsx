@@ -73,7 +73,7 @@ export default function AboutMe() {
                     <textarea className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem" name="message" required></textarea>
                 </div>
                 <div className="flex items-center justify-center">
-                    <button className="w-full bg-zinc-900 hover:bg-zinc-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <button className="w-full bg-stone-950 hover:bg-zinc-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                         Enviar
                     </button>
                 </div>
