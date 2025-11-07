@@ -17,11 +17,11 @@ export default function AboutMe() {
             emailjs.sendForm(serviceID, templateID, form.current, publicKey)
                 .then((result) => {
                     console.log(result.text);
-                    setNotification({ type: 'success', message: 'Email sent successfully!' });
+                    setNotification({ type: 'success', message: 'Email enviado com sucesso!' });
                     form.current?.reset();
                 }, (error) => {
                     console.log(error.text);
-                    setNotification({ type: 'error', message: 'Failed to send email. Please try again.' });
+                    setNotification({ type: 'error', message: 'Falha ao enviar email. Por favor, tente novamente.' });
                 });
         }
     };
@@ -35,7 +35,7 @@ export default function AboutMe() {
         }
     }, [notification]);
 
-    return <div className="flex flex-row items-center justify-center gap-75 h-screen bg-black text-white px-20">
+    return <div className="flex flex-row items-center justify-center gap-75 h-screen bg-zinc-900  text-white px-20">
         <div className="flex flex-col gap-5">
             <h1 className="text-4xl max-w-xl font-bold mb-8">Carlos Eduardo Goulart Oliveira</h1>
             <div className="text-start">
@@ -52,28 +52,28 @@ export default function AboutMe() {
         </div>
 
         <div className="w-full max-w-md">
-            <form ref={form} onSubmit={sendEmail} className="bg-grey-800 shadow-md rounded px-8 pt-6 pb-12 mb-">
+            <form ref={form} onSubmit={sendEmail} className="bg-zinc-800 shadow-md rounded px-8 pt-6 pb-12 mb-">
                 <h2 className="text-2xl font-bold mb-6 text-center">Envie sua mensagem</h2>
                 <div className="mb-4">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="email">
                         Email
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="seu.email@exemplo.com" name="from_email" required />
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="seu.email@exemplo.com" name="from_email" required />
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="subject">
                         Assunto
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Assunto da mensagem" name="from_subject" required />
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Assunto da mensagem" name="from_subject" required />
                 </div>
                 <div className="mb-6">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="message">
                         Mensagem
                     </label>
-                    <textarea className="shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem" name="message" required></textarea>
+                    <textarea className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem" name="message" required></textarea>
                 </div>
                 <div className="flex items-center justify-center">
-                    <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <button className="w-full bg-zinc-900 hover:bg-zinc-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                         Enviar
                     </button>
                 </div>
