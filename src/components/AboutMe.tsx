@@ -58,19 +58,19 @@ export default function AboutMe() {
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="email">
                         Email
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="seu.email@exemplo.com" name="from_email" required />
+                    <input className="shadow appearance-none rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="seu.email@exemplo.com" name="from_email" required />
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="subject">
                         Assunto
                     </label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Assunto da mensagem" name="from_subject" required />
+                    <input className="shadow appearance-none rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Assunto da mensagem" name="from_subject" required />
                 </div>
                 <div className="mb-6">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="message">
                         Mensagem
                     </label>
-                    <textarea className="shadow appearance-none border rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem" name="message" required></textarea>
+                    <textarea className="shadow appearance-none rounded w-full py-2 px-3 bg-zinc-900 text-white leading-tight focus:outline-none focus:shadow-outline h-24" id="message" placeholder="Sua mensagem" name="message" required></textarea>
                 </div>
                 <div className="flex items-center justify-center">
                     <button className="w-full bg-zinc-900 hover:bg-zinc-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
