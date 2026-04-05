@@ -35,16 +35,16 @@ export default function AboutMe() {
         }
     }, [notification]);
 
-    return <div className="flex flex-row items-center justify-center gap-75 h-screen bg-zinc-900  text-white px-20">
-        <div className="flex flex-col gap-5">
-            <h1 className="text-4xl max-w-xl font-bold mb-8">Carlos Eduardo Goulart Oliveira</h1>
-            <div className="text-start">
-                <p className="text-3xl mb-4 max-w-xl">
+    return <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-75 min-h-screen bg-zinc-900 text-white px-6 sm:px-10 md:px-20 py-8">
+        <div className="flex flex-col gap-5 text-center lg:text-left">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl font-bold mb-8">Carlos Eduardo Goulart Oliveira</h1>
+            <div>
+                <p className="text-xl sm:text-2xl md:text-3xl mb-4 max-w-xl">
                     Estudante de Sistemas para Internet na UTFPR,
                     desenvolvedor com grande interesse em projetos Full Stack
                     e tecnologias modernas.
                 </p>
-                <p className="text-2xl max-w-xl">
+                <p className="text-lg sm:text-xl md:text-2xl max-w-xl">
                     Busco oportunidades para aplicar meu conhecimento, aprender
                     com profissionais experientes e contribuir para projetos desafiadores.
                 </p>
@@ -52,8 +52,8 @@ export default function AboutMe() {
         </div>
 
         <div className="w-full max-w-md">
-            <form ref={form} onSubmit={sendEmail} className="bg-zinc-800 shadow-md rounded px-8 pt-6 pb-12 mb-">
-                <h2 className="text-2xl font-bold mb-6 text-center">Envie sua mensagem</h2>
+            <form ref={form} onSubmit={sendEmail} className="bg-zinc-800 shadow-md rounded px-6 sm:px-8 pt-6 pb-12 mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold mb-6 text-center">Envie sua mensagem</h2>
                 <div className="mb-4">
                     <label className="block text-gray-400 text-sm font-bold mb-2" htmlFor="email">
                         Email
@@ -77,14 +77,14 @@ export default function AboutMe() {
                         Enviar
                     </button>
                 </div>
-                
+
                 {notification && (
                     <div className={`mt-4 text-center p-2 rounded ${notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'} text-white`}>
                         {notification.message}
                     </div>
                 )}
 
-                <div className='text-4xl flex flex-row justify-center items-center gap-10 mt-8'>
+                <div className='text-3xl sm:text-4xl flex flex-row justify-center items-center gap-10 mt-8'>
                     <a href="https://github.com/CarlosEGoulart" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
