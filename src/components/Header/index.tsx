@@ -16,7 +16,7 @@ export default function Header() {
             
             {isOpen && (
                 <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center">
-                    <div className="flex flex-col items-center gap-8 text-6xl font-bold">
+                    <div className="flex flex-col items-center gap-4 sm:gap-8 text-3xl sm:text-5xl md:text-6xl font-bold">
                         <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
                         <a href="#about-me" onClick={() => setIsOpen(false)}>About Me</a>
                     </div>
