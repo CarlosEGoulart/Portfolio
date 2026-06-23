@@ -40,13 +40,13 @@ export default function AboutMe() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl font-bold mb-8">Carlos Eduardo Goulart Oliveira</h1>
             <div>
                 <p className="text-xl sm:text-2xl md:text-3xl mb-4 max-w-xl">
-                    Estudante de Sistemas para Internet na UTFPR,
-                    desenvolvedor com grande interesse em projetos Full Stack
-                    e tecnologias modernas.
+                    Estudante de Sistemas para Internet na UTFPR e estagiário na Millpar,
+                    desenvolvedor com grande interesse em interesse em desenvolvimento BackEnd.
                 </p>
                 <p className="text-lg sm:text-xl md:text-2xl max-w-xl">
-                    Busco oportunidades para aplicar meu conhecimento, aprender
-                    com profissionais experientes e contribuir para projetos desafiadores.
+                    Atualmente, estou focando meus estudos em construções de projetos utilizando Laravel,
+                    desenvolvimento Mobile utilizando React Native, banco de dados utilizando PostgreSQL
+                    e aprimorando minha habilidade em resolução de problemas utilizando TypeScript.
                 </p>
             </div>
         </div>
